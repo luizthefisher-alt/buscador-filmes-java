@@ -35,11 +35,16 @@ Este projeto foi criado com o objetivo de praticar conceitos básicos de program
 
 ## 📂 Estrutura do projeto
 
+## ▶️ Como executar
 
+1. Clone o repositório:
+git clone https://github.com/luizthefisher-alt/buscador-filmes-java.git
+
+2. Abra o projeto em uma IDE (Eclipse ou IntelliJ)
+
+3. Execute a classe Main.java
 
 ---
 
-## ▶️ Como executar o projeto
 
-1. Clone o repositório:
 
