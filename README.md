@@ -34,3 +34,12 @@ Este projeto foi criado com o objetivo de praticar conceitos básicos de program
 ---
 
 ## 📂 Estrutura do projeto
+
+
+
+---
+
+## ▶️ Como executar o projeto
+
+1. Clone o repositório:
+
