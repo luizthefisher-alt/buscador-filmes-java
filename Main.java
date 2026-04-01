@@ -1,52 +1,28 @@
 package projeto;
 
 import java.util.Scanner;
+
 import java.util.ArrayList;
 
 public class Main {
+	
 
 	public static void main(String[] args) {
 		
 	Scanner sc = new Scanner(System.in);
-	ArrayList<Produto> lista = new ArrayList<>();
+	ArrayList<Filme> lista = new ArrayList<>();
 
-	Produto filme = new Produto();
-	Produto filme2 = new Produto();
-	Produto filme3 = new Produto();
-	Produto filme4 = new Produto();
-	Produto filme5 = new Produto();
-	Produto filme6 = new Produto();
-	Produto filme7 = new Produto();
+	Filme filme1 = new Filme("Os vingadores", 120, "Disney plus");
+	Filme filme2 = new Filme("Batman begins", 130, "HBO max");
+	Filme filme3 = new Filme("Interestelar", 150, "HBO max");
+	Filme filme4 = new Filme("Lalaland", 120, "Prime video");
+	Filme filme5 = new Filme("Liga da justiça", 100, "Netflix");
+	Filme filme6 = new Filme("Zootopia", 120, "Disney plus");
+	Filme filme7 = new Filme("O agente secreto", 180, "Netflix");
 	
-	filme.nome = "Os vingadores";
-	filme.duracao = 120;
-	filme.streaming = "Disney plus";
 	
-	filme2.nome = "Batman begins";	
-	filme2.duracao = 130;
-	filme2.streaming = "HBO max";
 	
-	filme3.nome = "Interestelar";
-	filme3.duracao = 150;
-	filme3.streaming = "HBO max";
-	
-	filme4.nome = "Lalaland";
-	filme4.duracao = 120;
-	filme4.streaming = "Prime video";
-	
-	filme5.nome = "Liga da Justiça";
-	filme5.duracao = 100;
-	filme5.streaming = "Netflix";
-	
-	filme6.nome = "Zootopia";
-	filme6.duracao = 120;
-	filme6.streaming = "Disney plus";
-	
-	filme7.nome = "O agente secreto";
-	filme7.duracao = 180;
-	filme7.streaming = "Netflix";
-	
-	lista.add(filme);
+	lista.add(filme1);
 	lista.add(filme2);
 	lista.add(filme3);
 	lista.add(filme4);
@@ -61,20 +37,23 @@ public class Main {
 	
 	boolean encontrado = false;
 	
-	for(Produto p : lista) {
-        if(p.nome.toLowerCase().contains(nome)) {
-            p.exibirProduto();
+	for(Filme p : lista) {
+        if(p.getNome().toLowerCase().contains(nome)) {
+            p.exibirFilme();
             encontrado = true;
         }
     }
 	
 	if(!encontrado) {
-        System.out.println("Filme não encontrado");
+        System.out.println("Nenhum resultado encontrado");
     }
 
     sc.close();
+    
 
               
-     }
+     
 
+	}
 }
+
